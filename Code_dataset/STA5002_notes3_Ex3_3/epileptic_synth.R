@@ -1,8 +1,6 @@
 # Load required library
 library(MASS)  # for rnegbin()
 
-setwd("/Users/shij/Documents/GitHub/Course-related/Code_dataset/STA5002_notes3_Ex3_3/")
-
 # Set seed for reproducibility
 set.seed(0807)
 
@@ -67,4 +65,4 @@ epileptic_synth_wide$PatientID <- as.integer(epileptic_synth_wide$PatientID)
 View(epileptic_synth_wide)
 
 # Save as CSV
-write.csv(epileptic_synth_wide, file = "epileptic_synth_wide.csv", row.names = FALSE)
+write.csv(epileptic_synth_wide, file = "epileptic_synth.csv", row.names = FALSE)
