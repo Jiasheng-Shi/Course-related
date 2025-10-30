@@ -55,6 +55,13 @@ plot_ly() %>%
     opacity = 0.807,
     showscale = FALSE,
     name = "True Surface"
+  )%>%
+  layout(
+    scene = list(
+      xaxis = list(title = "X"),
+      yaxis = list(title = "Z"),
+      zaxis = list(title = "Y")
+    )
   )
 
 write.csv(data, file="Synthetic_data_L8_example2.csv", col.names = TRUE)
