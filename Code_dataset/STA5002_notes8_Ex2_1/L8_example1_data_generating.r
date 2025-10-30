@@ -87,5 +87,5 @@ p <- plot_ly(
 p
 
 mydat<-data.frame(Y=Y,X1=X[,1],X2=X[,2])
-saveRDS(mydat,file = "Synthetic_data_L8_example1.rds")
-
+#saveRDS(mydat,file = "Synthetic_data_L8_example1.rds")
+write.csv(mydat, file = "Synthetic_data_L8_example1.csv", row.names = FALSE)
